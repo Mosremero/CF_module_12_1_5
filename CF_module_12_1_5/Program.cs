@@ -10,10 +10,10 @@ namespace CF_module_12_1_5
 			User user = new User();
 			user.Login = "abc";
 			user.Name = "John";
-			user.IsPremium = true;
+			user.IsPremium = false;
 
 			Console.WriteLine("{0} здравствуйте!", user.Name);
-			if (user.IsPremium)
+			if (!user.IsPremium)
             {
 				ShowAds();
             }
